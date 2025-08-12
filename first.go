@@ -95,6 +95,18 @@ func main() {
 	age1,age2 := unknown2(5,6,"multiple")
 	fmt.Println(age1,age2)
 
+	var firstNumber ,secondNumber int
+	var typeOf string
+	fmt.Println("Enter First & Second Number Respectively:") 
+	fmt.Scanln(&firstNumber,&secondNumber)
+
+	fmt.Println("What you want:")
+	fmt.Scanln(&typeOf)
+	unknown(firstNumber,secondNumber,typeOf)
+	 
+
+	
+
 
 
 
