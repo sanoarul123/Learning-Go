@@ -92,6 +92,8 @@ func main() {
 	add(5,6)
 	unknown(5,6,"multiple")
 
+	//take input from user
+
 	age1,age2 := unknown2(5,6,"multiple")
 	fmt.Println(age1,age2)
 
@@ -103,7 +105,8 @@ func main() {
 	fmt.Println("What you want:")
 	fmt.Scanln(&typeOf)
 	unknown(firstNumber,secondNumber,typeOf)
-	 
+	
+	//end 
 
 	
 
