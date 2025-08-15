@@ -1,7 +1,30 @@
 package main
 
-import "fmt"
+/*Topic:
 
+1. Variable Shadow 019 episod
+2. Standared Function: যার নাম আছে বা যেই ফাংকশন এর নাম আচে তাকে বলে
+3. Init Function: যাকে আমি কল করতে পারব নাহ, কম্পিউটার নিজে থেকেই কল করে
+		i. No input / no output / no return
+
+
+
+
+
+
+
+
+
+
+*/
+
+//to use custom package first create this by : go mod init example.com
+
+import (
+	"fmt"
+
+	"example.com/mathlib"
+)
 
 func unknown2(temp1 int,temp2 int,temp3 string) (int,int){
 
@@ -105,13 +128,27 @@ func main() {
 	fmt.Println("What you want:")
 	fmt.Scanln(&typeOf)
 	unknown(firstNumber,secondNumber,typeOf)
+	scope() 
+
 	
 	//end 
 
+
+
+	fmt.Println("Showing Custom Package")
+	mathlib.Add(5,6)
+
+
+
+
 	
 
 
 
 
 
+}
+
+func init(){
+	fmt.Println("Initialization")
 }
