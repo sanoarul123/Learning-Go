@@ -75,6 +75,8 @@ func add(temp1 int,temp2 int) {
 
 func main() {
 
+	functionExpressionAssignFunctionInVariable()
+
 	anonymousFunction()
 
 	fmt.Println("Hello World")
