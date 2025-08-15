@@ -75,6 +75,8 @@ func add(temp1 int,temp2 int) {
 
 func main() {
 
+	anonymousFunction()
+
 	fmt.Println("Hello World")
 
 	//Variable Declaration
@@ -133,20 +135,10 @@ func main() {
 	
 	//end 
 
-
-
 	fmt.Println("Showing Custom Package")
 	mathlib.Add(5,6)
 
-
-
-
-	
-
-
-
-
-
+	anonymousFunction()
 }
 
 func init(){
