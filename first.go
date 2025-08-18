@@ -75,6 +75,10 @@ func add(temp1 int,temp2 int) {
 
 func main() {
 
+	firstOrderFunction()
+
+	pstsVsArg(5,6) //Pasing Value to a function called argument	 
+
 	functionExpressionAssignFunctionInVariable()
 
 	anonymousFunction()
@@ -138,7 +142,8 @@ func main() {
 	//end 
 
 	fmt.Println("Showing Custom Package")
-	mathlib.Add(5,6)
+	sum:=mathlib.Add(5,6)
+	fmt.Println("Sum from custom package is",sum)
 
 	anonymousFunction()
 }
