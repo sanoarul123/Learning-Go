@@ -38,27 +38,38 @@ import "fmt"
 		again :
 		rule: All customers must pay tips to the waiters.
 
+*/
 
+/*
+
+	Higher Order Function- any of the following three- higher order function is also called first class function
+		1. parameter -> function
+		2. function return
+		3. both
+
+*/
+/*
+
+	Call Back function - which function pass into higher order function as argument
 
 
 */
 
 /*
 
-	Higher Order Function- any of the following three-
-		1. parameter -> function
-		2. function return
-		3. both
+first class citizen - a programming language feature that treats functions as first-class citizens,
+							allowing them to be assigned to variables, passed as arguments, and returned from other functions.
+
 
 */
-
-func processOperation(a,b int,op func (p,q int)){
+func processOperation(a,b int,op func (p,q int)){ // receive as parameter function called higher order function
 
 	op(a,b)
 }
 
-
-
+func call() func (x,y int) { // return function is also called higher order function
+	return	addition
+}
 
 func addition(x,y int){
 	z := x + y
@@ -66,7 +77,9 @@ func addition(x,y int){
 }
 
 func firstOrderFunction(){
-	processOperation(10,20,addition) 
+	// processOperation(10,20,addition) 
+		sum := call()
+		sum(5,6)
 
 
 }
